@@ -11,18 +11,18 @@
 
 /* Header Navigation */
 
-.header_navbar {
+.header__navbar {
     display: flex;
     justify-content: space-between;
 }
 
-.header-navbar_list {
+.header-navbar__list {
     list-style-type: none;
     padding: 0;
     margin: 8px 0;
 }
 
-.header-nav-list_item {
+.header-nav-list__item {
     display: inline-block;
     margin: 0 8px;
     font-size: 14px;
@@ -34,29 +34,36 @@
     min-height: 22px;
 }
 
-.header-nav-list_icon {
+ 
+.header-nav-list__item--showQRCode:hover
+.header-nav__codeQR {
+    display: block;
+}
+
+.header-nav-list__icon {
     margin: 0 4px;
 }
 
-.header-nav-list_item:hover,
-.header-nav-list-item_link:hover,
-.header-nav-list_icon-link:hover {
+.header-nav-list__item:hover,
+.header-nav-list-item__link:hover,
+.header-nav-list__icon-link:hover {
     color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
 }
-.header-nav-list_title--no-hover {
+
+.header-nav-list__title--no-hover {
     cursor: text;
-    color: var(--white-color) ;
+    color: var(--white-color);
 }
 
-.header-nav-list_icon-link {
+.header-nav-list__icon-link {
     color: var(--white-color);
     text-decoration: none;
     font-size: 1.8rem;
 }
 
 
-.header-nav-list_item--separate::after {
+.header-nav-list__item--separate::after {
     content: "";
     height: 16px;
     position: absolute;
@@ -66,7 +73,50 @@
     transform: translateY(-50%);
 }
 
-.header-nav-list-item_link {
+.header-nav-list-item__link {
     text-decoration: none;
     color: var(--white-color);
+}
+
+/* Header Contact */
+
+.header-nav__codeQR::before {
+    content: "";
+    width: 100%;
+    height: 16px;
+    top: -8px;
+    left: 0;
+    position: absolute;
+}
+.header-nav__codeQR {
+    width: 186px;
+    background-color: var(--white-color);
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    padding: 8px;
+    border-radius: 2px;
+    animation: fadeIn ease 0.4s;
+    display: none;
+}
+
+.header-nav-codeQR__img {
+    width: 100%;
+}
+
+.header-nav__downloadApps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-downloadApp__link:first-child {
+    margin-left: 11px;
+}
+
+.header-nav-downloadApp__link:last-child{
+    margin-right: 11px;
+}
+
+.header-nav-downloadApp__img {
+    height: 16px;
 }

@@ -18,34 +18,49 @@
 <body>
     <div class="app">
         <header class="header">
-            <nav class="header_navbar grid">
-                <ul class="header-navbar_list">
-                    <li class="header-nav-list_item header-nav-list_item--separate">Vào cửa hàng trên ứng dụng F8-shop</li>
-                    <li class="header-nav-list_item">
-                        <span class="header-nav-list_title--no-hover">Kết nối</span>
-                        <a href="#" class="header-nav-list_icon-link">
-                            <i class="header-nav-list_icon fab fa-facebook"></i>
+            <nav class="header__navbar grid">
+                <ul class="header-navbar__list">
+                    <li class="header-nav-list__item header-nav-list__item--showQRCode header-nav-list__item--separate">
+                        Vào cửa hàng trên ứng dụng F8-shop
+
+                        <!-- Header Contact -->
+                        <div class="header-nav__codeQR">
+                            <img src="./assets/img/qr_code.png" alt="QR Code" class="header-nav-codeQR__img">
+                            <div class="header-nav__downloadApps">
+                                <a href="#"  class="header-nav-downloadApp__link">
+                                    <img class="header-nav-downloadApp__img " src="./assets/img/google_play.png" alt="Google Play">
+                                </a>
+                                <a href="#"  class="header-nav-downloadApp__link">
+                                    <img class="header-nav-downloadApp__img " src="./assets/img/app_store.png" alt="App Store">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header-nav-list__item">
+                        <span class="header-nav-list__title--no-hover">Kết nối</span>
+                        <a href="#" class="header-nav-list__icon-link">
+                            <i class="header-nav-list__icon fab fa-facebook"></i>
                         </a>
-                        <a href="#" class="header-nav-list_icon-link">
-                            <i class="header-nav-list_icon fab fa-instagram"></i>
+                        <a href="#" class="header-nav-list__icon-link">
+                            <i class="header-nav-list__icon fab fa-instagram"></i>
                         </a>
                     </li>
                 </ul>
-                <ul class="header-navbar_list">
-                    <li class="header-nav-list_item">
-                        <a href="" class="header-nav-list-item_link">
+                <ul class="header-navbar__list">
+                    <li class="header-nav-list__item">
+                        <a href="" class="header-nav-list-item__link">
                             <i class="fas fa-bell"></i>
                             Thông báo
                         </a>
                     </li>
-                    <li class="header-nav-list_item">
-                        <a href="" class="header-nav-list-item_link">
+                    <li class="header-nav-list__item">
+                        <a href="" class="header-nav-list-item__link">
                             <i class="far fa-question-circle"></i>
                             Trợ giúp
                         </a>
                     </li>
-                    <li class="header-nav-list_item fontWeight500 header-nav-list_item--separate">Đăng nhập</li>
-                    <li class="header-nav-list_item fontWeight500">Đăng ký</li>
+                    <li class="header-nav-list__item fontWeight500 header-nav-list__item--separate">Đăng nhập</li>
+                    <li class="header-nav-list__item fontWeight500">Đăng ký</li>
                 </ul>
             </nav>
         </header>
