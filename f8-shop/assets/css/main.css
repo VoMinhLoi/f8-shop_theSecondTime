@@ -34,9 +34,8 @@
     min-height: 22px;
 }
 
- 
-.header-nav-list__item--showQRCode:hover
-.header-nav__codeQR {
+
+.header-nav-list__item--showQRCode:hover .header-nav__codeQR {
     display: block;
 }
 
@@ -88,6 +87,7 @@
     left: 0;
     position: absolute;
 }
+
 .header-nav__codeQR {
     width: 186px;
     background-color: var(--white-color);
@@ -113,10 +113,78 @@
     margin-left: 11px;
 }
 
-.header-nav-downloadApp__link:last-child{
+.header-nav-downloadApp__link:last-child {
     margin-right: 11px;
 }
 
 .header-nav-downloadApp__img {
     height: 16px;
+}
+
+/* Header Notification */
+.header-notify {
+    position: absolute;
+    background-color: var(--white-color);
+    top: calc(100% + 8px);
+    right: 0;
+    width: 404px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-notify__list {
+    padding: 0;
+}
+
+.header-notify-list__title {
+    color: #a3a3a3;
+    font-size: 1.4rem;
+    margin: 0px 12px;
+    font-weight: 300;
+    line-height: 40px;
+    cursor: default;
+}
+
+.header-notify__item--viewed {
+    background-color: rgba(238, 75, 43, 0.08);
+}
+
+.header-notify__item:hover {
+    background-color: #f7f7f7;
+}
+
+.header-notify-item__link {
+    display: flex;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.header-notify-item-link__img {
+    width: 48px;
+    object-fit: contain;
+    margin-right: 12px;
+}
+
+.header-notify-item-link__name {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.header-notify-item-link__description {
+    font-size: 1.2rem;
+    color: #958e8c;
+}
+
+.footer-notify {
+    height: 32px;
+    text-align: center;
+    padding: 8px;
+}
+
+.footer-notify__link {
+    text-decoration: none;
+    color: var(--text-color);
 }
