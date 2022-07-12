@@ -127,6 +127,16 @@
     display: block;
 }
 
+.header__notify::before {
+    content: "";
+    border-style: solid;
+    border-width: 20px 32px;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -32px;
+    right: 4px;
+}
+
 .header__notify {
     position: absolute;
     background-color: var(--white-color);
@@ -138,6 +148,15 @@
     transform-origin: calc(100% - 20px) top;
     animation: Growth ease-in 0.2s;
     display: none;
+}
+
+.header__notify::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 20px;
+    top: -18px;
+    right: 0;
 }
 
 .header-notify__list {
