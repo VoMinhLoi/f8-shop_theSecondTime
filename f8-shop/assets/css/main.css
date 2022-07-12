@@ -122,7 +122,12 @@
 }
 
 /* Header Notification */
-.header-notify {
+.header-nav-list__item--showNotification:hover 
+.header__notify {
+    display: block;
+}
+
+.header__notify {
     position: absolute;
     background-color: var(--white-color);
     top: calc(100% + 8px);
@@ -130,6 +135,9 @@
     width: 404px;
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transform-origin: calc(100% - 20px) top;
+    animation: Growth ease-in 0.2s;
+    display: none;
 }
 
 .header-notify__list {
@@ -143,6 +151,7 @@
     font-weight: 300;
     line-height: 40px;
     cursor: default;
+    user-select: none;
 }
 
 .header-notify__item--viewed {
@@ -170,6 +179,7 @@
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: var(--text-color);
+    margin-bottom: 4px;
     font-weight: 400;
 }
 
