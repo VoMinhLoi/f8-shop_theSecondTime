@@ -9,6 +9,11 @@
     box-sizing: inherit;
 }
 
+/* Common */
+.mgr12 {
+    margin-right: 12px;
+}
+/* main */
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
@@ -76,4 +81,17 @@ html {
     z-index: 1;
     border-radius: 2px;
 }
-/*  */
+/* Button */
+.btn {
+    min-width: 124px;
+    height: 36px;
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    font-weight: 300;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}

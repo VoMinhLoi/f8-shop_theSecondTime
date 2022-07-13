@@ -25,7 +25,7 @@
 .header-nav-list__item {
     display: inline-block;
     margin: 0 8px;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 300;
     color: var(--white-color);
     position: relative;
@@ -217,4 +217,67 @@
 .footer-notify__link {
     text-decoration: none;
     color: var(--text-color);
+}
+
+/* Register form */
+
+.auth-form {
+    width: 500px;
+    background-color: var(--white-color);
+    padding: 0 32px;
+    border-radius: 2px;
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form-header__title {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.auth-form-header__switch-btn {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.auth-form__form {
+    margin: 12px 0;
+}
+
+.auth-form__fills {
+    margin-bottom: 12px;
+}
+
+.auth-form-fills__input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.auth-form__term-policy {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.auth-form-term-policy__link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.auth-form__btn {
+    margin: 80px 0 0;
+    text-align: right;
+}
+
+.auth-form__socials {
+    display: flex;
+    justify-content: space-between;
+    
 }
