@@ -313,3 +313,25 @@
     display: flex;
     margin: auto;
 }
+
+/* Login form */
+.auth-form__term {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form-term__link {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+.auth-form-term__link-forgot {
+    color: var(--primary-color);
+}
+.auth-form-term__separate {
+    border: 1px solid #eaeaea;
+    margin: -2px 16px 0;
+    height: 22px;
+}
+.auth-form-term__link-help {
+    color: #cccccc;
+}
