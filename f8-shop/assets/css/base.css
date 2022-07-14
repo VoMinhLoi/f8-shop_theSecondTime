@@ -98,12 +98,17 @@ html {
     text-decoration: none;
 }
 
-.btn--disable {
+.btn.btn--disable {
     background-color: #dbdbdb;
     cursor: default;
 }
 
-.btn--size-m {
+.btn.btn--size-s {
+    min-height: 34px;
+    min-width: 60px;
+}
+
+.btn.btn--size-l {
     padding: 8px;
     min-width: 200px;
 }
