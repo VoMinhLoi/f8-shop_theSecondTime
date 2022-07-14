@@ -138,6 +138,8 @@
 }
 
 .header__notify {
+    --growth-from: 0;
+    --growth-to:1;
     position: absolute;
     background-color: var(--white-color);
     top: calc(100% + 8px);
