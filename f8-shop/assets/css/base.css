@@ -89,13 +89,16 @@ html {
 /* Button */
 .btn {
     min-width: 124px;
-    height: 36px;
+    height: 34px;
     border: none;
     font-size: 1.4rem;
     border-radius: 2px;
     font-weight: 300;
     cursor: pointer;
     text-decoration: none;
+    display: inline-block;
+    line-height: 3.4rem;
+    text-align: center;
 }
 
 .btn.btn--disable {
@@ -103,9 +106,18 @@ html {
     cursor: default;
 }
 
-.btn.btn--size-s {
+.btn--size-s,
+.btn--size-m,
+.btn--size-l {
     min-height: 34px;
+}
+
+.btn.btn--size-s {
     min-width: 60px;
+}
+
+.btn.btn--size-m {
+    min-width: 124px;
 }
 
 .btn.btn--size-l {
