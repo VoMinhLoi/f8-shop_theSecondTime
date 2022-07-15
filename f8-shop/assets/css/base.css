@@ -1,11 +1,13 @@
 :root {
     --white-color: white;
     --black-color: black;
+    --red-color: red;
     --text-color: #333;
     --primary-color: #EE4D2D;
     --header-height: 120px;
     --header-nav-height: 35px;
-    --header-logo-height: calc(var(--header-height) - var(--header-nav-height))
+    --header-logo-height: calc(var(--header-height) - var(--header-nav-height));
+    --gray-color-hover: #fafafa;
 }
 
 * {

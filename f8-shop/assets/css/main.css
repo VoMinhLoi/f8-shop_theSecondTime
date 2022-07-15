@@ -21,6 +21,7 @@
     list-style-type: none;
     padding: 0;
     margin: 8px 0;
+    display: flex;
 }
 
 .header-nav-list__item {
@@ -33,6 +34,7 @@
     display: inline-flex;
     align-items: center;
     min-height: 22px;
+
 }
 
 
@@ -219,6 +221,67 @@
 .footer-notify__link {
     text-decoration: none;
     color: var(--text-color);
+}
+
+.header-nav-list-item__user-img {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #e33b2a;
+    border-radius: 50%;
+    margin-right: 4px;
+
+}
+
+.header-nav-list__item-user:hover 
+.header-nav-list-item__profile {
+    display: block;
+}
+
+.header-nav-list-item__profile::before {
+    content: "";
+    border-right: 20px solid transparent;
+    border-bottom: 16px solid var(--white-color);
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: -16px;
+    right: 4px;
+}
+
+.header-nav-list-item__profile {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background-color: var(--white-color);
+    z-index: 1;
+    width: 160px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px #a3a3a3;
+    display: none;
+}
+.header-nav-list-item-profile__item:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.header-nav-list-item-profile__item {
+    padding: 8px 16px;
+}
+.header-nav-list-item-profile__item:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.header-nav-list-item-profile__item:hover {
+    background-color: var(--gray-color-hover);   
+}
+
+.header-nav-list-item-profile-item__link {
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: 300;
+    display: block;
 }
 
 /* Register form */
@@ -421,7 +484,7 @@
 }
 
 .header-search-history__item:hover {
-    background-color: #fafafa;
+    background-color: var(--gray-color-hover);
 }
 
 .header-search-history-item__link {
@@ -502,7 +565,7 @@
 }
 
 .header-search-selected__select:hover {
-    background-color: #fafafa;
+    background-color: var(--gray-color-hover);
     cursor: pointer;
 }
 
@@ -545,6 +608,7 @@
     padding: 1px 7px;
     border-radius: 10px;
     border: 2px solid #eb4c2c;
+
 }
 
 .header-cart__products::before {
@@ -568,7 +632,7 @@
     right: 0;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
     border-radius: 2px;
-    /* display: none; */
+    display: none;
     width: 400px;
 }
 
