@@ -8,6 +8,7 @@
     --header-nav-height: 35px;
     --header-logo-height: calc(var(--header-height) - var(--header-nav-height));
     --gray-color-hover: #fafafa;
+    --column-width: 8.3%;
 }
 
 * {
@@ -48,12 +49,13 @@ html {
     padding-left: 12px;
 }
 
-.grid-row__column-2 {
-    width: 16.67%;
+.grid-row__column-2 {    
+    width: calc(var(--column-width)*2);
+
 }
 
 .grid-row__column-10 {
-    width: 83.33%;
+    width: calc(var(--column-width)*10);
 }
 
 /* Animation */
