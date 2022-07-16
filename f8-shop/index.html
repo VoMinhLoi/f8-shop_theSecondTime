@@ -290,7 +290,7 @@
 
         <div class="contain">
             <div class="grid">
-                <div class="grid__row">
+                <div class="grid__row app__content">
                     <div class="grid-row__column-2 container__nav">
                         <nav class="category">
                             <h2 class="category__heading">
@@ -311,7 +311,37 @@
                         </nav>
                     </div>
                     <div class="grid-row__column-10">
-
+                        <div class="container__sort">
+                            <span class="container-sort__heading">Sắp xếp theo</span>
+                            <button class="btn btn--size-m">Phổ biến</button>
+                            <button class="btn btn--primary btn--size-m">Mới nhất</button>
+                            <button class="btn btn--size-m">Bán chạy</button>
+                            <span class="container-sort__filtered">
+                                Giá
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                            </span>
+                            <ul class="container-sort__filter-list">
+                                <li class="container-sort__filter-list">
+                                    <a href="#" class="container-sort-filter-item__link">Giá: Thấp đến cao</a>
+                                </li>
+                                <li class="container-sort__filter-list">
+                                    <a href="#" class="container-sort-filter-item__link">Giá: Cao đến thấp</a>
+                                </li>
+                            </ul>
+                            <div class="container-sort__page">
+                                <span class="container-sort-page__page-num">
+                                    <span class="container-sort-page__current-num">1</span>
+                                    /4
+                                </span>
+                                <button class="btn">
+                                    <i class="fas fa-angle-left"></i>
+                                </button>
+                                
+                                <button class="btn">
+                                    <i class="fas fa-angle-right"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
