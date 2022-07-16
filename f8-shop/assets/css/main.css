@@ -64,6 +64,10 @@
     font-size: 1.8rem;
 }
 
+.header-nav-list__icon-link:nth-child(2) {
+    margin-left: 4px;
+}
+
 
 .header-nav-list__item--separate::after {
     content: "";
@@ -100,6 +104,7 @@
     padding: 8px;
     border-radius: 2px;
     animation: fadeIn ease 0.4s;
+    box-shadow: 0 1px 3px #a699a6;
     display: none;
 }
 
@@ -143,6 +148,7 @@
     --growth-from: 0;
     --growth-to: 1;
     position: absolute;
+    z-index: 1;
     background-color: var(--white-color);
     top: calc(100% + 8px);
     right: 0;
@@ -232,8 +238,7 @@
 
 }
 
-.header-nav-list__item-user:hover 
-.header-nav-list-item__profile {
+.header-nav-list__item-user:hover .header-nav-list-item__profile {
     display: block;
 }
 
@@ -261,20 +266,36 @@
     box-shadow: 0 1px 3px #a3a3a3;
     display: none;
 }
+
+.header-nav-list-item__profile::after {
+    content: "";
+    position: absolute;
+    top: -12%;
+    right: 0;
+    width: 70%;
+    height: 20%;
+}
+
 .header-nav-list-item-profile__item:first-child {
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
 }
+
 .header-nav-list-item-profile__item {
     padding: 8px 16px;
 }
+
 .header-nav-list-item-profile__item:last-child {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
 
 .header-nav-list-item-profile__item:hover {
-    background-color: var(--gray-color-hover);   
+    background-color: var(--gray-color-hover);
+}
+
+.header-nav-list-item-profile__item--separate {
+    border-top: 1px solid #ccc;
 }
 
 .header-nav-list-item-profile-item__link {
@@ -282,6 +303,10 @@
     color: var(--black-color);
     font-weight: 300;
     display: block;
+}
+
+.header-nav-list-item-profile-item__link--red {
+    color: red;
 }
 
 /* Register form */
