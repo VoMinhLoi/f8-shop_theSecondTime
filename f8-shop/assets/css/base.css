@@ -121,13 +121,18 @@ html {
 }
 
 .btn.btn--disable {
-    background-color: #dbdbdb;
     cursor: default;
+    background-color: #f9f9f9;
+}
+
+.btn .icon--disable {
+    color: #ccc;
 }
 
 .btn--size-s,
 .btn--size-m,
-.btn--size-l {
+.btn--size-l,
+.btn--size-xl {
     min-height: 34px;
 }
 
@@ -136,10 +141,14 @@ html {
 }
 
 .btn.btn--size-m {
-    min-width: 124px;
+    min-width: 90px;
 }
 
 .btn.btn--size-l {
+    min-width: 124px;
+}
+
+.btn.btn--size-xl {
     padding: 8px;
     min-width: 200px;
 }
