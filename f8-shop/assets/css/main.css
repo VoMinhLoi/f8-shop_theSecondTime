@@ -1005,4 +1005,34 @@
 .product-item__action {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.product-item-action__like {
+    color: #f63d30;
+    font-size: 1.4rem;
+}
+
+i.product-item-action__liked-icon {
+    display: none;
+}
+
+.product-item-action__liked 
+.product-item-action__like-icon {
+    display: none;
+}
+
+.product-item-action__liked
+.product-item-action__liked-icon{
+    display: block;
+}
+
+.product-item-action__rate {
+    /* zoom: 0.7; */
+    /* transform: scale(0.7); */
+    font-size: 0.7rem;
+}
+
+.product-item-action-rate__star--gold {
+
 }
