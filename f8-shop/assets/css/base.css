@@ -4,6 +4,7 @@
     --red-color: red;
     --text-color: #333;
     --primary-color: #EE4D2D;
+    --gold-star-color: yellow;
     --header-height: 120px;
     --header-nav-height: 35px;
     --header-logo-height: calc(var(--header-height) - var(--header-nav-height));
