@@ -105,6 +105,7 @@
     border-radius: 2px;
     animation: fadeIn ease 0.4s;
     box-shadow: 0 1px 3px #a699a6;
+    z-index: 1;
     display: none;
 }
 
@@ -487,6 +488,7 @@
     border-radius: 2px;
     box-shadow: 0 1px 3px #a699a6;
     overflow: hidden;
+    z-index: 1;
     display: none;
 }
 
@@ -657,8 +659,9 @@
     right: 0;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
     border-radius: 2px;
-    display: none;
     width: 400px;
+    z-index: 1;
+    /* display: none; */
 }
 
 .header-cart__no-products {
@@ -698,6 +701,8 @@
     list-style: none;
     padding-left: 0;
     margin: 0;
+    height: 70vh;
+    overflow-y: auto;
 }
 
 .header-cart-products__item {
@@ -732,6 +737,12 @@
 .header-cart-products-item-about__name {
     margin: 0;
     color: var(--text-color);
+    max-height: 40px;
+    overflow: hidden;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .header-cart-products-item-about-name__value {
@@ -761,6 +772,11 @@
     margin: 0;
     color: #a8a8a8;
     font-size: 1.2rem;
+    line-height: 2rem;
+    /* height: 2rem;
+    max-width: 252px;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
 }
 
 .header-cart-products-item-about-body__remove-link {
@@ -803,6 +819,23 @@
     padding-left: 0;
     margin: 0 12px;
     list-style: none;
+}
+
+.category__item {
+    position: relative;
+}
+
+.category__item:first-child:before {
+    display: none;
+}
+
+.category__item::before {
+    position: absolute;
+    content: "";
+    background-color: #ccc;
+    top: 0;
+    height: 1px;
+    width: 100%;
 }
 
 .category-item__link {
@@ -903,6 +936,7 @@
     margin: 0;
     border-radius: 2px;
     display: none;
+    box-shadow: 0 1px 3px #a699a6;
 }
 
 .container-sort__filter-item {
@@ -1140,7 +1174,6 @@ i.product-item-action__liked-icon {
     left: 0;
     right: 0;
     background-color: var(--primary-color);
-    text-decoration: none;
     color: var(--white-color);
     text-align: center;
     padding: 8px;
@@ -1148,5 +1181,6 @@ i.product-item-action__liked-icon {
     border-bottom-right-radius: 2px;
     border-bottom-left-radius: 2px;
     display: none;
+    box-shadow: 0 1px 2px #e0e0e0;
     z-index: 1;
 }
