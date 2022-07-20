@@ -105,7 +105,7 @@
     border-radius: 2px;
     animation: fadeIn ease 0.4s;
     box-shadow: 0 1px 3px #a699a6;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 
@@ -149,7 +149,7 @@
     --growth-from: 0;
     --growth-to: 1;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     background-color: var(--white-color);
     top: calc(100% + 8px);
     right: 0;
@@ -261,7 +261,7 @@
     top: calc(100% + 12px);
     right: 0;
     background-color: var(--white-color);
-    z-index: 1;
+    z-index: 2;
     width: 160px;
     border-radius: 2px;
     box-shadow: 0 1px 3px #a3a3a3;
@@ -660,7 +660,7 @@
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
     border-radius: 2px;
     width: 400px;
-    z-index: 1;
+    z-index: 2;
     display: none;
 }
 
@@ -937,8 +937,9 @@
     background-color: var(--white-color);
     margin: 0;
     border-radius: 2px;
-    display: none;
     box-shadow: 0 1px 3px #a699a6;
+    z-index: 2;
+    display: none;
 }
 
 .container-sort__filter-item {
@@ -1198,15 +1199,16 @@ i.product-item-action__liked-icon {
 }
 
 .pagination-item__link {
+    --height: 30px;
     text-decoration: none;
     color: #939393;
     font-size: 2rem;
     font-weight: 300;
     display: block;
     min-width: 40px;
-    height: 30px;
+    height: var(--height);
     text-align: center;
-    line-height: 30px;
+    line-height: var(--height);
     padding-left: 0;
 }
 
@@ -1219,4 +1221,72 @@ i.product-item-action__liked-icon {
 .container-content__panination{
 
     margin: 38px 0 30px 0;
+}
+
+/* Footer */
+.footer {
+    border-top: 5px solid var(--primary-color);
+    padding: 30px 0 0;
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.footer__list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer__item {
+    line-height: 20px;
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    font-weight: 300;
+}
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer__list-img {
+    display: flex;
+}
+
+.footer__item--cover {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.footer-item__link-img {
+    --height: 80px;
+    height: var(--height);
+    width: var(--height);
+    border: 1px solid #dbdbdb;
+}
+
+.footer-item__link-img--size-m {
+    height: 30px;
+    object-fit: contain;
+    border: none;
+}
+
+.footer__copyRight {
+    background-color: #f5f5f5;
+    text-align: center;
+    color: #7b7b7b;
+    padding: 8px 0;
+}
+
+.footer-copyRight__serviceName {
+    margin: auto;
+    font-weight: 300;
 }
