@@ -207,3 +207,24 @@ html {
 .pagination-item__link--active:hover {
     opacity: 0.7;
 }
+
+/* Arrow  Right*/
+.arrow::before {
+    content: "";
+    border-right: 20px solid transparent;
+    border-bottom: 16px solid var(--white-color);
+    border-left: 20px solid transparent;
+    position: absolute;
+    top: -12px;
+    right: 0px;
+}
+
+.arrow--right-20px::before {
+    content: "";
+    border-style: solid;
+    border-width: 20px 32px;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -32px;
+    right: 4px;
+}
