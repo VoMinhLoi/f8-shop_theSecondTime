@@ -89,6 +89,8 @@ html {
     }
 }
 
+
+
 /* Modal */
 .modal {
     position: fixed;
@@ -227,4 +229,115 @@ html {
     position: absolute;
     top: -32px;
     right: 4px;
+}
+
+/* Online Support */
+
+@keyframes Blur {
+    from {
+        border: 1px solid rgba(92, 92, 92, 0.4);
+    }
+    to {
+        /* border: 0px solid transparent; */
+        border: 4px solid rgba(0, 0, 0, 0.4);
+
+    }
+}
+.online-support-wrap {
+    --dimension: 70px;
+    position: fixed;
+    right: 20px;
+    bottom: 70px;
+    height: var(--dimension);
+    width: var(--dimension);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: border ease 0.3s; */
+    animation: Blur 2s linear 0s infinite alternate; /* alternate */
+    border-radius: 50%;
+    box-sizing: unset;
+    z-index: 3;
+
+}
+
+.online-support::before {
+    content: "";
+    height: 220px;
+    width: 50px;
+    left: 0;
+    bottom: calc(100% - 40px);
+    position: absolute;
+}
+
+.online-support {
+    height: calc(var(--dimension) - 20px);
+    width: calc(var(--dimension) - 20px);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.online-support__icon {
+    font-size: 4rem;
+}
+
+.online-support:hover 
+.online-support__list {
+    display: block;
+}
+
+.online-support__list {
+    position: absolute;
+    right: 16px;
+    bottom: var(--dimension);
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.4rem;
+    display: none;
+}
+
+.online-support-item__link {
+    position: relative;
+    text-decoration: none;
+    color: var(--white-color);
+    display: flex;
+    background-color: var(--primary-color);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.online-support-item__link:hover
+.online-support-item__description {
+    display: block;
+}
+
+.online-support-item__description {
+    position: absolute;
+    right: calc(100% + 20px);
+    top: 4px;
+    background-color: var(--primary-color);
+    width: 160px;
+    padding: 5px 10px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    font-weight: 300;
+    display: none;
+}
+
+.online-support-item__description::after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    content: "";
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+    border-left: 16px solid var(--primary-color);
 }
