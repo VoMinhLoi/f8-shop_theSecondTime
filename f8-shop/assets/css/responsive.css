@@ -1,0 +1,14 @@
+/* Computer */
+@media screen and (min-height: 1024px) {
+    
+}
+
+/* Tablet */
+@media screen  (min-height: 740px) {
+    
+}
+
+/* Mobile */
+@media screen and (max-height: 739px) {
+    
+}
