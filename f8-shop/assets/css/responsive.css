@@ -4,11 +4,25 @@
         --header-height: 68px;
         --header-nav-height: 0px;
     }
+    .arrow::before {
+        opacity: 0;
+    }
     .hide-on-tablet-mobile {
         display: none;
     }
+    .header-cart__products {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px)/2);
+    }
     .contain {
         margin-top: calc(var(--header-height) + var(--header-sort-height));
+    }
+    .header__sort {
+        display: flex;
     }
 }
 

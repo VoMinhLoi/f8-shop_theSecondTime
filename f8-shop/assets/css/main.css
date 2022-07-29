@@ -816,12 +816,12 @@
     top: var(--header-height);
     right: 0;
     left: 0;
-    display: flex;
     height: var(--header-sort-height);
     /* align-items: center;
     justify-content: space-around; */
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
+    display: none;
 }
 
 .header__sort-item {
