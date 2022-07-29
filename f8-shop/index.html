@@ -136,7 +136,10 @@
                     </ul>
                 </nav>
                 <div class="header-with-search">
-                    <div class="header__logo hide-on-tablet-mobile">
+                    <label for="show-header-search-mobile" class="header__search-mobile">
+                        <i class="header__search-mobile-icon fa fa-search"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
                         <a href="#" class="header-logo__link" target="">
                             <svg class="header-logo__img" viewBox="0 0 192 65">
                                 <g fill-rule="evenodd">
@@ -145,7 +148,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__search">
+                    <div class="header__search hide-on-mobile">
                         <div class="header-search__input-and-history">
                             <input type="text" class="header-search__input" placeholder="Tìm kiếm sản phẩm">
                             <div class="header-search__history">
@@ -575,6 +578,52 @@
                     <a href="#" class="header__sort-link">Giá</a>
                 </li>
             </ul>
+            <input type="checkbox" hidden id="show-header-search-mobile">
+            <div class="header__search hide-on-computer-tablet">
+                <div class="header-search__input-and-history">
+                    <input type="text" class="header-search__input" placeholder="Tìm kiếm sản phẩm">
+                    <div class="header-search__history">
+                        <h3 class="header-searh-history__heading">Lịch sử tìm kiếm</h3>
+                        <ul class="header-searh-history__list">
+                            <li class="header-search-history__item">
+                                <a href="#" class="header-search-history-item__link">
+                                    Asus
+                                </a>
+                            </li>
+                            <li class="header-search-history__item">
+                                <a href="#" class="header-search-history-item__link">
+                                    Acer
+                                </a>
+                            </li>
+                            <li class="header-search-history__item">
+                                <a href="#" class="header-search-history-item__link">
+                                    Laptop Gaming
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-search__selected">
+                    <span class="header-search-selected__about">
+                        Trong nước
+                    </span>
+                    <i class="header-search-selected__icon fas fa-angle-down"></i>
+                    <ul class="header-search-selected__options">
+                        <li class="header-search-selected__select">
+                            Trong nước
+                            <i class="header-search-selected-select__icon fa fa-check"></i>
+                        </li>
+                        <li class="header-search-selected__select">
+                            Ngoài nước
+                        </li>
+
+                    </ul>
+
+                </div>
+                <button class="btn btn--primary btn--size-s btn--hover header-search__button">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
         </header>
 
         <div class="contain">
