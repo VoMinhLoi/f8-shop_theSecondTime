@@ -61,6 +61,7 @@
 
 /* Mobile */
 @media screen and (max-width: 739px) {
+    
     .hide-on-mobile {
         display: none;
     }
@@ -69,6 +70,9 @@
     }
     .header__logo {
         width: unset;
+    }
+    .header-logo__img {
+        width: 110px;
     }
     .header__cart {
         width: 80px;
@@ -114,6 +118,9 @@
 
     .pagination-item {
         margin: 0 4px;
+    }
+    .footer__menu {
+        padding: 8px;
     }
 }
 
