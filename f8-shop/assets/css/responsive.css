@@ -24,6 +24,9 @@
         width: 100%;
         padding: 0 calc((100% - 644px)/2);
     }
+    .app__content {
+        padding-top: 0;
+    }
     .contain {
         margin-top: calc(var(--header-height) + var(--header-sort-height));
     }
@@ -41,6 +44,9 @@
         padding-right: 5px;
         padding-left: 5px;
     } */
+    .hide-on-pc {
+        display: none;
+    }
 }
 
 /* Tablet */
@@ -103,7 +109,7 @@
     }
 
     .container__content {
-        margin: 10px 4px 0;
+        margin: 8px 8px 0;
     }
 
     .pagination-item {
