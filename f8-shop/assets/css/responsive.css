@@ -31,6 +31,17 @@
         display: flex;
     }
 }
+/* PC */
+@media screen and (min-width: 1024px) {
+    /* .row {
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+    .col {
+        padding-right: 5px;
+        padding-left: 5px;
+    } */
+}
 
 /* Tablet */
 @media screen and (min-width: 740px) and (max-width: 1023px) {
@@ -89,6 +100,14 @@
         top: calc(var(--header-height) + var(--header-sort-height));
         width: 100%;
         
+    }
+
+    .container__content {
+        margin: 10px 4px 0;
+    }
+
+    .pagination-item {
+        margin: 0 4px;
     }
 }
 
